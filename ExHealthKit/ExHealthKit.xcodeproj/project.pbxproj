@@ -14,6 +14,8 @@
 		BDAF32DB2978C49F00F39930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAF32D92978C49F00F39930 /* Main.storyboard */; };
 		BDAF32DD2978C4A000F39930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAF32DC2978C4A000F39930 /* Assets.xcassets */; };
 		BDAF32E02978C4A000F39930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAF32DE2978C4A000F39930 /* LaunchScreen.storyboard */; };
+		BDEB4151297A2C8F0092822C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB4150297A2C8F0092822C /* ViewModel.swift */; };
+		BDEB4153297A2CC40092822C /* HealthKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB4152297A2CC40092822C /* HealthKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,9 @@
 		BDAF32DC2978C4A000F39930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDAF32DF2978C4A000F39930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDAF32E12978C4A000F39930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDEB4150297A2C8F0092822C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BDEB4152297A2CC40092822C /* HealthKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitView.swift; sourceTree = "<group>"; };
+		BDEB4154297A2D6A0092822C /* ExHealthKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExHealthKit.entitlements; sourceTree = "<group>"; };
 		D109992FCB7DBCC81AF65A0E /* Pods-ExHealthKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExHealthKit.debug.xcconfig"; path = "Target Support Files/Pods-ExHealthKit/Pods-ExHealthKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +61,6 @@
 				D109992FCB7DBCC81AF65A0E /* Pods-ExHealthKit.debug.xcconfig */,
 				2794C380898730302F7F9B4F /* Pods-ExHealthKit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,13 +85,16 @@
 		BDAF32D22978C49F00F39930 /* ExHealthKit */ = {
 			isa = PBXGroup;
 			children = (
+				BDEB4154297A2D6A0092822C /* ExHealthKit.entitlements */,
 				BDAF32D32978C49F00F39930 /* AppDelegate.swift */,
 				BDAF32D52978C49F00F39930 /* SceneDelegate.swift */,
+				BDEB4150297A2C8F0092822C /* ViewModel.swift */,
 				BDAF32D72978C49F00F39930 /* ViewController.swift */,
 				BDAF32D92978C49F00F39930 /* Main.storyboard */,
 				BDAF32DC2978C4A000F39930 /* Assets.xcassets */,
 				BDAF32DE2978C4A000F39930 /* LaunchScreen.storyboard */,
 				BDAF32E12978C4A000F39930 /* Info.plist */,
+				BDEB4152297A2CC40092822C /* HealthKitView.swift */,
 			);
 			path = ExHealthKit;
 			sourceTree = "<group>";
@@ -209,6 +216,8 @@
 			files = (
 				BDAF32D82978C49F00F39930 /* ViewController.swift in Sources */,
 				BDAF32D42978C49F00F39930 /* AppDelegate.swift in Sources */,
+				BDEB4153297A2CC40092822C /* HealthKitView.swift in Sources */,
+				BDEB4151297A2C8F0092822C /* ViewModel.swift in Sources */,
 				BDAF32D62978C49F00F39930 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExHealthKit/ExHealthKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 99XDN4TU2D;
@@ -384,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExHealthKit/ExHealthKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 99XDN4TU2D;
